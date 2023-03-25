@@ -47,14 +47,6 @@
   },
   "prettier": {
     "tabWidth": 2,
-    "singleQuote": false,
-    "overrides": [
-      {
-        "files": "schema.prisma",
-        "options": {
-          "tabWidth": 3
-        }
-      }
-    ]
+    "singleQuote": false
   }
 }
