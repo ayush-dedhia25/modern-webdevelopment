@@ -3,6 +3,7 @@
     "CLIENTVAR",
     "middlewares",
     "NEXTAUTH",
+    "nextjs",
     "runtimes",
     "superjson",
     "tailwindcss",
