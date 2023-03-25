@@ -1,8 +1,12 @@
 {
-   "cSpell.words": [
-      "superjson",
-      "tailwindcss",
-      "tanstack",
-      "trpc"
-   ]
+  "cSpell.words": [
+    "CLIENTVAR",
+    "middlewares",
+    "NEXTAUTH",
+    "runtimes",
+    "superjson",
+    "tailwindcss",
+    "tanstack",
+    "trpc"
+  ]
 }
