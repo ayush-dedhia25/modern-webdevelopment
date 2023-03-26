@@ -6,7 +6,7 @@ import { api } from "~/utils/api";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ClerkProvider {...pageProps}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </ClerkProvider>
   );
 }
