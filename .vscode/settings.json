@@ -1,14 +1,18 @@
 {
   "cSpell.words": [
+    "Authed",
     "CLIENTVAR",
     "middlewares",
     "NEXTAUTH",
     "nextjs",
+    "Ratelimit",
     "roboto",
     "runtimes",
     "superjson",
     "tailwindcss",
     "tanstack",
-    "trpc"
+    "trpc",
+    "typesafety",
+    "upstash"
   ]
 }

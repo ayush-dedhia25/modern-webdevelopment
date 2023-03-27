@@ -29,7 +29,9 @@ function Home() {
       <main className="flex h-screen justify-center">
         <div className="h-full w-full border-x border-slate-200 md:max-w-2xl">
           <div className="flex border-b border-slate-200 p-4">
-            <div>{!isSignedIn ? <SignInButton /> : <CreatePostWizard />}</div>
+            <div className="flex w-full justify-center">
+              {!isSignedIn ? <SignInButton /> : <CreatePostWizard />}
+            </div>
           </div>
           <Feed />
         </div>

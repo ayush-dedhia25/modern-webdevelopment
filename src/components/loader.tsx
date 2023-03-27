@@ -1,12 +1,22 @@
-function Loader({ size = 12 }: { size?: number }) {
+type LoaderProps = {
+  fill?: string;
+  size?: number;
+  inline?: boolean;
+};
+
+function Loader({ fill = "white", inline, size = 12 }: LoaderProps) {
   return (
     <div
       role="status"
-      className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+      className={`${
+        !inline
+          ? "absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+          : "inline-block"
+      }`}
     >
       <svg
         aria-hidden="true"
-        className={`mr-2 h-${size} w-${size} animate-spin fill-purple-600 text-gray-200 dark:text-gray-600`}
+        className={`mr-2 h-${size} w-${size} animate-spin fill-${fill} text-gray-200 dark:text-gray-600`}
         viewBox="0 0 100 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

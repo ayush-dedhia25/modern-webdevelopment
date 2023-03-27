@@ -3,14 +3,14 @@ import Loader from "./loader";
 import PostView from "./postView";
 
 function Feed() {
-  const { data, isLoading: postsLoading } = api.posts.getAll.useQuery();
+  const { data, isLoading: tweetsLoading } = api.posts.getAll.useQuery();
 
-  if (postsLoading) return <Loader />;
+  if (tweetsLoading) return <Loader />;
 
-  if (!data) return <div>Something wen't super wrong!</div>;
+  if (!data) return <div>Something went super wrong!</div>;
 
   return (
-    <div>
+    <div className="flex grow flex-col overflow-y-scroll">
       {data?.map((fullPost) => (
         <PostView key={fullPost.post.id} {...fullPost} />
       ))}
